@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pardavimai</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <div class="logo">
+          <img src="./assets/sales-logo.svg" />
+          <span>Pardavimai</span>
+        </div>
+      </a>
+      <ul>
+        <li><a href="./index.html">All items</a></li>
+        <li><a href="./addItem.html">Add item</a></li>
+      </ul>
+    </header>
+
+    <div class="items-wrapper" id="items-wrapper">
+      <div class="item_form">
+        <input id="name" placeholder="name"/>
+        <input id="location" placeholder="location"/>
+        <input id="price" placeholder="price" type="number" min="0" max="9999999"/>
+        <input id="photo_url" placeholder="photo_url" />
+        <input id="desc" placeholder="description" />
+        <button id="submit_button">Add</button>
+        <div id="success_message" class="success_message"></div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div>©Pardavimai</div>
+      <div>2023</div>
+    </footer>
+    <script src="./js3.js"></script>
+  </body>
+</html>

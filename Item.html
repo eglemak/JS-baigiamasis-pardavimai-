@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pardavimai</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <div class="logo">
+          <img src="./assets/sales-logo.svg" />
+          <span>Pardavimai</span>
+        </div>
+      </a>
+      <ul>
+        <li><a href="./index.html">All items</a></li>
+        <li><a href="./addItem.html">Add item</a></li>
+      </ul>
+    </header>
+
+
+    <section class="item-section">
+      <div class="item-wrapper">
+        <div id="photo" class="item-photo"></div>
+        <div class="item-content">
+          <div class="top">
+            <div class="left-info">
+              <div class="item-title" id="item-title"></div>
+              <div class="item-breed" id="item-location"></div>
+            </div>
+            <div class="right-info">
+              <div class="item-price" id="price"></div>
+            </div>
+          </div>
+          
+          <div class="item-description" id="item-description"></div>
+          <button id="delete-button">Delete item</button>
+        </div>
+      </div>
+
+      <div id="delete-message" class="delete-message"></div>
+    </section>
+
+
+    <footer>
+      <div>©Pardavimai</div>
+      <div>2023</div>
+    </footer>
+    <script src="./js2.js"></script>
+  </body>
+</html>

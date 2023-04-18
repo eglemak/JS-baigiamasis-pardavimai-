@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  min-width: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a08a6d;
+  height: 100px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.logo span {
+  font-size: 36px;
+  color: black;
+  font-family: "Oooh Baby", cursive;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+header ul li a {
+  color: black;
+}
+
+
+.items-wrapper {
+  min-height: calc(100vh - 200px);
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.item-link {
+  height: 200px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 200px;
+  background-color: #f3f3f3; 
+  /* #fafafa */
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+  display: flex;
+
+}
+
+.wrapper:hover {
+  box-shadow: 0px 9px 32px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.location {
+  width: 100px;
+  padding-left: 50px;
+  align-self: center;
+}
+
+
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.title {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.title-wrapper .price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+.item-section {
+  /* min-height: calc(100vh - 400px); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-wrapper {
+  width: 500px;
+  margin: 0px 30px;
+  margin-top: 50px;
+  border: 1px solid rgb(237, 237, 237);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.item-photo {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px; 
+}
+
+
+.item-content {
+  padding: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.left-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-title {
+  font-size: 26px;
+}
+
+.item-price {
+  font-size: 34px;
+  font-weight: 500;
+  color: rgb(70, 39, 24);
+}
+
+.item-description {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.delete-message {
+  margin-bottom: 50px;
+  color: red;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+.item_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.item_form input {
+  padding: 8px;
+}
+
+ button {
+  padding: 8px;
+  background-color: #a08a6d;
+  color: white;
+  cursor: pointer;
+}
+
+.success_message {
+  color: green;
+}
+
+footer {
+  background-color: #a08a6d;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer div {
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .item-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .item-photo {
+    height: 300px;
+  }
+
+  .wrapper {
+    width: 360px;
+  }
+}
