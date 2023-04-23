@@ -1,6 +1,7 @@
 body {
   margin: 0;
   min-width: 400px;
+  box-sizing: border-box;
 }
 
 a {
@@ -17,6 +18,8 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  /* position: fixed;
+  top: 0; */
 }
 
 .logo {
@@ -47,7 +50,7 @@ header ul li a {
 
 
 .items-wrapper {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 190px);
   margin-top: 60px;
   margin-bottom: 30px;
   display: flex;
@@ -58,10 +61,6 @@ header ul li a {
   align-content: center;
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.item-link {
-  height: 200px;
 }
 
 .wrapper {
@@ -82,7 +81,7 @@ header ul li a {
 
 .wrapper img {
   width: 250px;
-  height: 200px;
+  /* height: 200px; */
   object-fit: cover;
 }
 
@@ -128,7 +127,7 @@ header ul li a {
 }
 
 .item-wrapper {
-  width: 500px;
+  max-width: 600px;
   margin: 0px 30px;
   margin-top: 50px;
   border: 1px solid rgb(237, 237, 237);
@@ -233,15 +232,50 @@ footer div {
   color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  .item-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .item-photo {
-    height: 300px;
+@media only screen and (max-width: 1000px) {
+  
+  .wrapper {
+    height: 150px;
   }
 
-  .wrapper {
-    width: 360px;
+  .wrapper img {
+    width: 150px;
   }
+}
+
+@media only screen and (max-width: 800px) {
+ 
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(237, 237, 237);
+  }
+
+  .wrapper img {
+    order: -1;
+    width: 250px;
+    height: 200px;
+    
+  }
+
+  .title-wrapper {
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .location {
+    order: 1;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+
 }

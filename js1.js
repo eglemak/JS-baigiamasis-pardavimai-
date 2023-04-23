@@ -1,6 +1,6 @@
 const itemsWrapper = document.getElementById("items-wrapper");
 
-const petOptionCreation = (item) => {
+const itemOptionCreation = (item) => {
   const wrapper = document.createElement("div");
   wrapper.setAttribute("class", "wrapper");
   const image = document.createElement("img");
@@ -54,6 +54,6 @@ fetch("https://642db4b6bf8cbecdb40d0e03.mockapi.io/item")
     data
       .sort((a, b) => Number(a.price) - Number(b.price))
       .forEach((item) => {
-        petOptionCreation(item);
+        itemOptionCreation(item);
       });
   });

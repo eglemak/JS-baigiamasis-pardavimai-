@@ -42,7 +42,7 @@ button.addEventListener("click", () => {
 
   fetchItems(newItem);
 } else {
-  const successMessage = document.getElementById("success_message");
+  const successMessage = document.getElementById("failure_message");
   successMessage.innerHTML = "Fill all inputs";
 }
 });
